@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f4edde">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Lumi & Hoya · 小日子</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="game">
+  <header><div class="brand"><span class="mark">LH</span><div><h1>Lumi & Hoya</h1><p>小日子 · a little room for two</p></div></div><button id="music" aria-label="開啟全部聲音" aria-pressed="false">♫<span class="sound-dot"></span></button></header>
+  <section class="dashboard" aria-label="貓咪狀態">
+    <div class="cat-tabs" role="group" aria-label="選擇貓咪"><button data-cat="lumi" aria-pressed="true"><i class="cat-dot lumi"></i>Lumi</button><button data-cat="hoya" aria-pressed="false"><i class="cat-dot hoya"></i>Hoya</button><span class="wallet"><span>✦</span> <b id="coins">150</b></span></div>
+    <div class="meters"><label>飽足<meter id="hunger" min="0" max="100"></meter></label><label>心情<meter id="mood" min="0" max="100"></meter></label><label>精力<meter id="energy" min="0" max="100"></meter></label><label>親密<meter id="bond" min="0" max="100"></meter></label><label>潔淨<meter id="cleanliness" min="0" max="100"></meter></label></div>
+  </section>
+  <section id="scene" aria-label="貓咪的房間">
+    <canvas id="room" width="240" height="320" aria-label="Lumi 和 Hoya 的像素房間；點貓靠近，滑動摸摸，拖食物或羽毛到地板"></canvas>
+    <div class="room-label"><span id="time-label">午後的小房間</span><span id="clock"></span></div>
+    <p id="note" role="status" aria-live="polite"></p>
+    <button id="back" hidden>← 回到房間</button>
+    <div id="intro"><span class="eyebrow">WELCOME HOME</span><h2>今天，也一起慢慢過。</h2><p>兩隻貓，一個有你的午後。</p><button id="start">推開小門 <span>→</span></button><small>戴上耳機，聽聽牠們的小聲呼嚕</small></div>
+  </section>
+  <footer><p id="hint">點點貓咪，等牠走到你身邊</p><nav aria-label="互動工具"><button id="call"><svg viewBox="0 0 32 28" aria-hidden="true"><path d="M9 18q7-9 14 0q5 9-7 6Q4 27 9 18"/><ellipse cx="6" cy="10" rx="3" ry="4"/><ellipse cx="14" cy="6" rx="3" ry="4"/><ellipse cx="23" cy="8" rx="3" ry="4"/></svg><span>叫過來</span></button><button id="food"><svg viewBox="0 0 32 28" aria-hidden="true"><path d="M3 13h26l-4 11H7z"/><path class="line" d="M8 8h16M12 4h8"/></svg><span>拖曳餵食 <small>5 ✦</small></span></button><button id="toy"><svg viewBox="0 0 32 28" aria-hidden="true"><path class="line" d="M6 25L23 3M22 5q-13-5-11 10"/><path d="M12 11q-10 0-7 10q10 1 7-10"/></svg><span>拖曳逗貓</span></button><button id="scoop"><svg viewBox="0 0 32 28" aria-hidden="true"><path class="line" d="M16 2v12M9 18v6m7-6v6m7-6v6"/><path d="M5 13h22v3H5zM5 13h3v14H5zm19 0h3v14h-3zM5 25h22v3H5z"/></svg><span>拖曳鏟沙</span></button><button id="night" aria-pressed="false"><svg viewBox="0 0 32 28" aria-hidden="true"><path d="M21 3C4 0 1 23 18 25q10 0 12-9C17 22 12 9 21 3"/></svg><span>晚安燈</span></button></nav></footer>
+</main>
+<script src="engine.js"></script><script src="game.js"></script>
+</body>
+</html>
