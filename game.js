@@ -8,7 +8,10 @@ let saved;try{saved=JSON.parse(localStorage.getItem('lumi-hoya-room-v1'));}catch
 $('app-version').textContent=APP_VERSION;
 let started=false,last=0,elapsed=0,zoom=1,focus={x:120,y:160},drag=null,stroke=null,noteUntil=0,lastHud=0,lastSave=0,music=false,audio=null,bgmClock=0,bgmStep=0,particles=[],pointerId=null;
 const hapticTimes={};let lastPurr=-1,lastBell=-1;
-function haptic(kind,pattern,interval=.3){if(document.hidden||elapsed-(hapticTimes[kind]??-1)<interval)return;hapticTimes[kind]=elapsed;try{navigator.vibrate?.(pattern);}catch{}}
+function haptic(kind,pattern,interval=.3){
+ if(document.hidden||elapsed-(hapticTimes[kind]??-1)<interval)return;hapticTimes[kind]=elapsed;
+ try{if(typeof navigator.vibrate==='function')navigator.vibrate(pattern);else $('ios-haptic')?.click?.();}catch{}
+}
 let awaySince=null;let audioPaused=false;const voices=new Set();
 let knowledge=null,knowledgeIndex=0,knowledgeExpanded=false;
 function renderKnowledge(){
