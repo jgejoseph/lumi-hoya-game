@@ -13,7 +13,7 @@ class KnowledgeTicker{
   let saved={};try{saved=JSON.parse(storage.getItem(KEY)||'{}')||{};}catch{}
   const cutoff=now()-7*DAY;this.history=Array.isArray(saved.history)?saved.history.filter(entry=>entry&&Number.isFinite(entry.id)&&Number.isFinite(entry.at)&&entry.at>=cutoff):[];
   const seed=[...this.day].reduce((sum,ch)=>sum+ch.charCodeAt(0),0);this.limit=1+seed%3;
-  this.daily=saved.day===this.day&&Array.isArray(saved.daily)?saved.daily.filter(entry=>this.byId.has(entry.id)).slice(0,this.limit):[];
+  this.daily=saved.day===this.day&&Array.isArray(saved.daily)?saved.daily.filter(entry=>this.byId.has(entry.id)&&entry.source!=='event').slice(0,this.limit):[];
   this.dismissedDay=saved.dismissedDay===this.day?this.day:'';
   this.persist();
  }
@@ -31,11 +31,9 @@ class KnowledgeTicker{
   if(!pool.length&&fallback)pool=this.items.filter(item=>item.trigger==='random'&&!recent.has(item.id)&&!current.has(item.id));
   if(!pool.length)pool=this.items.filter(item=>!recent.has(item.id)&&!current.has(item.id));
   const item=this.weightedPick(pool);if(!item)return null;
-  const entry={id:item.id,source:trigger==='random'?'random':'event'};
+  const entry={id:item.id,source:'daily'};
   if(this.daily.length<this.limit)this.daily.push(entry);
-  else if(entry.source==='event'){
-   const index=this.daily.findIndex(value=>value.source==='random');if(index<0)return null;this.daily[index]=entry;
-  }else return null;
+  else return null;
   this.history.push({id:item.id,at:this.now()});this.persist();return item;
  }
  dismissToday(){this.dismissedDay=this.day;this.persist();}
