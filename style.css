@@ -20,3 +20,4 @@ nav button{width:20%}.meters{gap:9px}#scoop{touch-action:none}
 /* Compact HUD and keep room messages away from the window. */
 header{padding-top:10px;padding-bottom:5px}.dashboard{padding-bottom:8px}.cat-tabs button{min-height:34px}.meters{margin-top:4px}.room-label{left:auto;right:16px;top:11px;justify-content:flex-end;gap:14px;white-space:nowrap}#note{top:30px;left:auto;right:12px;transform:none;max-width:56%;font-size:11px;padding:6px 10px}
 @media(max-width:360px){header{padding-top:7px;padding-bottom:3px}.dashboard{padding-bottom:5px}.room-label{left:auto;right:10px;gap:8px}#note{top:31px;right:9px;max-width:58%;font-size:10px}}
+#night[aria-pressed=true]{background:#ded0b4;color:#6f5737;box-shadow:inset 0 0 0 1px #c5aa78}#night[aria-pressed=true] svg{fill:#c28f43;filter:drop-shadow(0 0 3px #e8bd70)}
