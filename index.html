@@ -6,17 +6,17 @@
   <meta name="theme-color" content="#f4edde">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <title>Lumi & Hoya · 小日子</title>
-  <link rel="stylesheet" href="style.css?v=20260914r9">
+  <link rel="stylesheet" href="style.css?v=20260914r12">
 </head>
 <body>
 <input id="ios-haptic" type="checkbox" switch tabindex="-1" aria-hidden="true" style="position:fixed;left:-20px;top:-20px;width:1px;height:1px;opacity:.001;pointer-events:none">
-<audio id="bgm-media" src="bgm.wav?v=20260909u1" preload="auto" loop playsinline></audio>
+<audio id="bgm-media" src="bgm.wav?v=20260914u2" preload="auto" loop playsinline></audio>
 <audio id="danger-bgm-media" src="danger_bgm.wav?v=20260910u1" preload="auto" loop playsinline></audio>
 <main class="game">
   <header><div class="brand"><span class="mark">LH</span><div><h1>Lumi & Hoya</h1><p>小日子 · a little room for two</p></div></div><div class="top-actions"><button id="care-score" aria-expanded="false"><span>🐾</span> <b id="care-value">0</b><small>/100</small><span id="care-delta"></span></button><div id="care-breakdown" hidden><span>Lumi <b id="care-lumi">0</b>/100</span><span>Hoya <b id="care-hoya">0</b>/100</span><span>潔淨 <b id="care-home">0</b>/30</span></div><button id="music" aria-label="開啟全部聲音" aria-pressed="false">♫<span class="sound-dot"></span></button></div></header>
   <section class="dashboard" aria-label="貓咪狀態">
     <div class="cat-tabs" role="group" aria-label="選擇貓咪"><button data-cat="lumi" aria-pressed="true"><i class="cat-dot lumi"></i>Lumi</button><button data-cat="hoya" aria-pressed="false"><i class="cat-dot hoya"></i>Hoya</button><button id="reward-open" class="wallet" aria-expanded="false" aria-controls="reward-panel"><span>🪙</span> <b id="coins">150</b></button></div>
-    <div id="reward-panel" hidden aria-label="獎勵食物"><p>拖一份小禮物到房間地板</p><div><button data-reward="fish"><i>🐟</i><span>小魚乾<small>15 Coins · 3 秒</small></span></button><button data-reward="can"><i>🥫</i><span>高級罐頭<small>30 Coins · 6 秒</small></span></button><button data-reward="catnip"><i>🌿</i><span>貓薄荷零食<small>50 Coins · 10 秒</small></span></button></div></div>
+    <div id="reward-panel" hidden aria-label="獎勵商品"><p>獎勵小禮物與季節睡墊</p><div><button data-reward="fish"><i>🐟</i><span>小魚乾<small>15 Coins · 3 秒</small></span></button><button data-reward="can"><i>🥫</i><span>高級罐頭<small>30 Coins · 6 秒</small></span></button><button data-reward="catnip"><i>🌿</i><span>貓薄荷零食<small>50 Coins · 10 秒</small></span></button><button id="seasonal-bed-buy"><i id="seasonal-bed-icon">❄️</i><span id="seasonal-bed-name">夏日雙貓涼墊<small id="seasonal-bed-status">100 Coins · 7 天</small></span></button></div></div>
     <div id="painting-panel" hidden aria-label="選擇牆上照片"><p>選一幅牆上像素畫 · 更換 5 Coins</p><div></div></div>
     <div class="meters"><label><span>飽足 <b id="hunger-points"></b></span><meter id="hunger" min="0" max="20"></meter></label><label><span>心情 <b id="mood-points"></b></span><meter id="mood" min="0" max="20"></meter></label><label><span>精力 <b id="energy-points"></b></span><meter id="energy" min="0" max="20"></meter></label><label><span>親密 <b id="bond-points"></b></span><meter id="bond" min="0" max="10"></meter></label><label><span>潔淨 <b id="cleanliness-points"></b></span><meter id="cleanliness" min="0" max="30"></meter></label></div>
   </section>
@@ -29,6 +29,8 @@
   </section>
   <footer><div id="knowledge-ticker" class="knowledge-ticker" hidden><button id="knowledge-open" aria-expanded="false"><span id="knowledge-text"></span></button><button id="knowledge-dismiss">今天不再顯示</button></div><p id="hint">點點貓咪，等牠走到你身邊</p><nav aria-label="互動工具"><button id="water"><svg viewBox="0 0 32 28" aria-hidden="true"><path d="M16 2C13 8 7 13 7 18a9 9 0 0 0 18 0C25 13 19 8 16 2"/><path class="line" d="M11 19q1 4 5 4"/></svg><span>補水</span></button><button id="food"><svg viewBox="0 0 32 28" aria-hidden="true"><path d="M3 13h26l-4 11H7z"/><path class="line" d="M8 8h16M12 4h8"/></svg><span>拖曳餵食</span></button><button id="toy"><svg viewBox="0 0 32 28" aria-hidden="true"><path class="line" d="M6 25L23 3M22 5q-13-5-11 10"/><path d="M12 11q-10 0-7 10q10 1 7-10"/></svg><span>拖曳逗貓</span></button><button id="scoop"><svg viewBox="0 0 32 28" aria-hidden="true"><path class="line" d="M16 2v12M9 18v6m7-6v6m7-6v6"/><path d="M5 13h22v3H5zM5 13h3v14H5zm19 0h3v14h-3zM5 25h22v3H5z"/></svg><span>拖曳鏟沙</span></button><button id="night" aria-pressed="false"><svg viewBox="0 0 32 28" aria-hidden="true"><path d="M21 3C4 0 1 23 18 25q10 0 12-9C17 22 12 9 21 3"/></svg><span>晚安燈</span></button></nav></footer>
 </main>
-<script src="engine.js?v=20260914r9"></script><script src="knowledge.js?v=20260909p3"></script><script src="game.js?v=20260914r9"></script>
+<script src="engine.js?v=20260914r12"></script><script src="knowledge.js?v=20260909p3"></script><script src="game.js?v=20260914r12"></script>
 </body>
 </html>
+
+
