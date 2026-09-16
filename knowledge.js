@@ -8,7 +8,7 @@ const localDay=(date=new Date())=>{
 };
 class KnowledgeTicker{
  constructor(library,storage,random=Math.random,now=()=>Date.now()){
-  this.library=library;this.storage=storage;this.random=random;this.now=now;this.items=(library.items||[]).filter(item=>item.enabled&&item.age_level==='低年級');
+  this.library=library;this.storage=storage;this.random=random;this.now=now;this.items=(library.items||[]).filter(item=>item.enabled&&item.age_level==='中高年級');
   this.byId=new Map(this.items.map(item=>[item.id,item]));this.day=localDay(new Date(now()));
   let saved={};try{saved=JSON.parse(storage.getItem(KEY)||'{}')||{};}catch{}
   const cutoff=now()-7*DAY;this.history=Array.isArray(saved.history)?saved.history.filter(entry=>entry&&Number.isFinite(entry.id)&&Number.isFinite(entry.at)&&entry.at>=cutoff):[];

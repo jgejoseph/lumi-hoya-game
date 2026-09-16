@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
   "language": "zh-TW",
-  "target_age": "低年級",
+  "target_age": "中高年級",
   "description": "Lumi & Hoya 遊戲本地知識庫",
   "display_rules": {
     "default_daily_count": 3,
-    "ticker_max_chars_recommended": 32,
+    "ticker_max_chars_recommended": 50,
     "prefer_context_trigger": true,
     "fallback_trigger": "random",
     "avoid_repeat_within_days": 7
@@ -37,60 +37,60 @@
       "id": 1,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "貓咪每天都需要乾淨的飲水。",
+      "text": "貓對水的氣味很敏感，水碗若留下食物碎屑或異味，牠可能喝得比較少；每天換水也要洗碗。",
       "trigger": "feeding",
       "tags": [
         "water"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
       "id": 2,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "貓咪一天會睡很久，睡覺時不要一直打擾牠。",
+      "text": "貓不是一次睡滿整夜，而是分成許多段短睡眠；清晨與傍晚常是牠們較活躍的時段。",
       "trigger": "sleep",
       "tags": [
         "sleep"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
       "id": 3,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "貓砂盆保持乾淨，貓咪會比較願意使用。",
+      "text": "有些貓會掩埋排泄物，這和牠們保留乾淨活動區域的習性有關；砂盆太髒時可能改找別處。",
       "trigger": "litter",
       "tags": [
         "litter"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
       "id": 4,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "陪貓咪玩耍，可以幫助牠消耗體力。",
+      "text": "逗貓棒模仿獵物忽快忽慢的移動，讓貓能追逐、撲抓；偶爾讓牠抓到，遊戲才有完成感。",
       "trigger": "play",
       "tags": [
         "play"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
       "id": 5,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "摸貓咪以前，先讓牠自己靠近你會更好。",
+      "text": "貓主動靠近時，可以先伸手讓牠嗅聞；若身體僵硬或轉身離開，就表示這次互動該停了。",
       "trigger": "petting",
       "tags": [
         "touch"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
@@ -103,66 +103,66 @@
         "boundary"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 7,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "貓咪的耳朵往後壓，可能代表牠有點不開心。",
+      "text": "耳朵向後壓可能表示緊張或不耐煩，還要一起觀察尾巴、眼睛和身體姿勢，不能只看一個訊號。",
       "trigger": "annoyed",
       "tags": [
         "body_language"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
       "id": 8,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "貓咪快速甩尾巴時，可能是在說：我有點煩了。",
+      "text": "貓尾巴大幅快速甩動時，常代表情緒變得激動；這和狗開心搖尾巴的意思不一定相同。",
       "trigger": "annoyed",
       "tags": [
         "body_language"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
       "id": 9,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "很多貓喜歡被摸頭、臉頰和下巴，但每隻貓都不一樣。",
+      "text": "貓的臉頰有氣味腺，輕輕蹭家具或熟悉的人時，會留下自己熟悉的氣味，幫助牠認識環境。",
       "trigger": "petting",
       "tags": [
         "touch"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
       "id": 10,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "不是每隻貓都喜歡被摸肚子。",
+      "text": "貓露出肚子可能是在放鬆或打招呼，卻不一定想被摸肚子；先看牠有沒有主動靠近你的手。",
       "trigger": "petting",
       "tags": [
         "touch"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
       "id": 11,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "貓咪的鬍鬚很敏感，不要故意拉牠的鬍鬚。",
+      "text": "貓鬍鬚的根部連著敏感的神經，能察覺近處物體與空氣細微變化；修剪鬍鬚會干擾牠探索。",
       "trigger": "petting",
       "tags": [
         "whiskers"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
@@ -175,7 +175,7 @@
         "safe_space"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 13,
@@ -187,7 +187,7 @@
         "adaptation"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 14,
@@ -199,7 +199,7 @@
         "emotion"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 15,
@@ -211,30 +211,30 @@
         "rest"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 16,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "不要用手直接當玩具逗貓，使用逗貓棒會更安全。",
+      "text": "直接用手和貓追打，可能讓牠把手指當成獵物；用逗貓棒能保留追逐樂趣，也較容易保持距離。",
       "trigger": "play",
       "tags": [
         "safety"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
       "id": 17,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "逗貓棒玩完後要收好，避免貓咪自己咬到線。",
+      "text": "逗貓棒的細繩適合有人陪同時玩，收起來可避免貓獨自咬斷或吞下線段；玩具也需要定期檢查。",
       "trigger": "play",
       "tags": [
         "safety"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
@@ -247,7 +247,7 @@
         "safety"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 19,
@@ -259,7 +259,7 @@
         "home"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 20,
@@ -271,7 +271,7 @@
         "safety"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 21,
@@ -283,7 +283,7 @@
         "food"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 22,
@@ -295,7 +295,7 @@
         "food"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 23,
@@ -307,7 +307,7 @@
         "food"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 24,
@@ -319,7 +319,7 @@
         "food"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 25,
@@ -331,7 +331,7 @@
         "boundary"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 26,
@@ -343,18 +343,18 @@
         "water"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 27,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "貓咪喜歡乾淨，所以很多貓會自己舔毛整理身體。",
+      "text": "貓舔毛時，舌頭表面的小倒鉤會帶走鬆脫的毛髮；換毛時適度梳毛，也能減少牠吞進的毛。",
       "trigger": "grooming",
       "tags": [
         "grooming"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
@@ -367,7 +367,7 @@
         "grooming"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 29,
@@ -379,7 +379,7 @@
         "touch"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 30,
@@ -391,18 +391,18 @@
         "safety"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 31,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "貓咪抓東西是自然行為，可以準備抓板給牠。",
+      "text": "抓抓不只是磨爪，也能伸展身體、留下氣味訊號；在常走動的地方放抓板，比藏在角落更實用。",
       "trigger": "scratch",
       "tags": [
         "behavior"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
@@ -415,43 +415,43 @@
         "behavior"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 33,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "貓咪喜歡觀察窗外，鳥和小蟲常常會吸引牠。",
+      "text": "窗外快速移動的鳥會吸引貓的視線，因為追蹤小型動物的動作本來就是牠們的天性。",
       "trigger": "bird_event",
       "tags": [
         "bird"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
       "id": 34,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "貓咪看鳥時很專心，突然碰牠可能會嚇一跳。",
+      "text": "貓專心看窗外時，突然從背後碰牠可能引發驚跳；先讓牠聽見你的聲音，再慢慢靠近。",
       "trigger": "bird_event",
       "tags": [
         "bird",
         "boundary"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
       "id": 35,
       "category": "cat_care",
       "title": "🐾 養貓小常識",
-      "text": "貓咪呼嚕通常代表舒服，但有時緊張時也可能呼嚕。",
+      "text": "呼嚕常在放鬆時出現，但緊張時也可能呼嚕；要一起看耳朵、瞳孔與姿勢，才能判斷心情。",
       "trigger": "petting",
       "tags": [
         "purr"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
@@ -464,7 +464,7 @@
         "personality"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 37,
@@ -476,7 +476,7 @@
         "health"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 38,
@@ -488,7 +488,7 @@
         "health"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 39,
@@ -500,7 +500,7 @@
         "boundary"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 40,
@@ -512,18 +512,18 @@
         "bond"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 41,
       "category": "science",
       "title": "🔬 科學小知識",
-      "text": "聲音是物體振動後，經過空氣傳到我們耳朵的。",
+      "text": "聲音的高低取決於振動頻率，音量則和振幅有關；蚊子的細嗡聲與雷聲因此聽起來差很多。",
       "trigger": "random",
       "tags": [
         "sound"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
@@ -536,18 +536,18 @@
         "light"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 43,
       "category": "science",
       "title": "🔬 科學小知識",
-      "text": "白天的天空看起來藍藍的，和陽光在空氣中的散射有關。",
+      "text": "陽光裡有許多顏色，短波長的藍光較容易被空氣散射，所以晴朗白天的天空常看起來是藍色。",
       "trigger": "random",
       "tags": [
         "sky"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
@@ -560,7 +560,7 @@
         "water"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 45,
@@ -572,7 +572,7 @@
         "water"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 46,
@@ -584,7 +584,7 @@
         "magnet"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 47,
@@ -596,7 +596,7 @@
         "plant"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 48,
@@ -608,7 +608,7 @@
         "body"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 49,
@@ -620,18 +620,18 @@
         "body"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 50,
       "category": "science",
       "title": "🔬 科學小知識",
-      "text": "月亮本身不會發光，我們看到的是它反射的陽光。",
+      "text": "月亮並不自己發光；月相變化是因為太陽照亮月球的一半，而我們每天看到的亮面角度不同。",
       "trigger": "night",
       "tags": [
         "space"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
@@ -644,7 +644,7 @@
         "space"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 52,
@@ -656,7 +656,7 @@
         "space"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 53,
@@ -668,7 +668,7 @@
         "sound"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 54,
@@ -680,7 +680,7 @@
         "force"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 55,
@@ -692,19 +692,19 @@
         "weather"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 56,
       "category": "science",
       "title": "🔬 科學小知識",
-      "text": "彩虹是陽光經過水滴時分成不同顏色形成的。",
+      "text": "彩虹不只是雨滴把光染色；陽光進入水滴後折射、反射再射出，不同顏色的光分開了。",
       "trigger": "rain",
       "tags": [
         "light",
         "weather"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
@@ -717,7 +717,7 @@
         "air"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 58,
@@ -729,7 +729,7 @@
         "water"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 59,
@@ -741,7 +741,7 @@
         "body"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 60,
@@ -753,18 +753,18 @@
         "body"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 61,
       "category": "nature",
       "title": "🌿 自然小知識",
-      "text": "鳥的翅膀和羽毛能幫助牠們飛行。",
+      "text": "不少候鳥在夜間遷徙，會利用星空等線索判斷方向；城市過亮的燈光可能干擾牠們的路線。",
       "trigger": "bird_event",
       "tags": [
         "bird"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
@@ -777,18 +777,18 @@
         "bird"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 63,
       "category": "nature",
       "title": "🌿 自然小知識",
-      "text": "蝴蝶會用腳上的感覺器官幫助辨認植物。",
+      "text": "蝴蝶的腳上有能感受味道的構造，停在葉子上就能取得線索；這也有助於選擇產卵位置。",
       "trigger": "random",
       "tags": [
         "insect"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
@@ -802,7 +802,7 @@
         "plant"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 65,
@@ -814,7 +814,7 @@
         "plant"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 66,
@@ -826,7 +826,7 @@
         "plant"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 67,
@@ -838,18 +838,18 @@
         "weather"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 68,
       "category": "nature",
       "title": "🌿 自然小知識",
-      "text": "雲看起來很輕，其實裡面有很多小水滴。",
+      "text": "雲由大量微小水滴或冰晶組成，雖然整片雲的水不少，單顆水滴卻很小，能暫時飄在空中。",
       "trigger": "rain",
       "tags": [
         "weather"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
@@ -862,7 +862,7 @@
         "weather"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 70,
@@ -874,7 +874,7 @@
         "sky"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 71,
@@ -886,7 +886,7 @@
         "animal"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 72,
@@ -898,7 +898,7 @@
         "animal"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 73,
@@ -910,42 +910,42 @@
         "animal"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 74,
       "category": "nature",
       "title": "🌿 自然小知識",
-      "text": "青蛙的幼體叫蝌蚪。",
+      "text": "蝌蚪長成青蛙時，不只長出四肢，呼吸方式也會改變；尾巴裡的養分會逐漸被身體吸收。",
       "trigger": "random",
       "tags": [
         "animal"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
       "id": 75,
       "category": "nature",
       "title": "🌿 自然小知識",
-      "text": "蜘蛛不是昆蟲，蜘蛛有八隻腳。",
+      "text": "蜘蛛有八隻腳，身體也和六隻腳的昆蟲不同；牠們同屬節肢動物，卻分在不同的類群。",
       "trigger": "random",
       "tags": [
         "animal"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
       "id": 76,
       "category": "nature",
       "title": "🌿 自然小知識",
-      "text": "螞蟻會用氣味和同伴傳遞很多訊息。",
+      "text": "螞蟻找到食物後，常沿途留下費洛蒙氣味；同伴跟著這條氣味路線，就能往返食物與巢穴。",
       "trigger": "random",
       "tags": [
         "insect"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
@@ -958,42 +958,42 @@
         "plant"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 78,
       "category": "nature",
       "title": "🌿 自然小知識",
-      "text": "風是空氣在移動。",
+      "text": "壁虎腳趾下有大量極細的毛狀構造，能和表面緊密接觸，因此牠不靠膠水也能爬上牆面。",
       "trigger": "random",
       "tags": [
         "weather"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
       "id": 79,
       "category": "nature",
       "title": "🌿 自然小知識",
-      "text": "夜晚看到的星星，有些距離地球非常非常遠。",
+      "text": "老鼠屬於囓齒動物，門齒會持續生長；啃咬硬物能磨耗牙齒，鬍鬚也有助於在暗處探路。",
       "trigger": "night",
       "tags": [
         "space"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
       "id": 80,
       "category": "nature",
       "title": "🌿 自然小知識",
-      "text": "季節改變時，有些動物的活動方式也會跟著改變。",
+      "text": "會吸血的是雌蚊，牠能利用呼吸排出的二氧化碳尋找動物；蚊子的幼蟲則生活在水中。",
       "trigger": "random",
       "tags": [
         "season"
       ],
-      "age_level": "低年級",
+      "age_level": "中高年級",
       "enabled": true
     },
     {
@@ -1006,7 +1006,7 @@
         "tidy"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 82,
@@ -1018,7 +1018,7 @@
         "hygiene"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 83,
@@ -1030,7 +1030,7 @@
         "health"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 84,
@@ -1042,7 +1042,7 @@
         "rest"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 85,
@@ -1054,7 +1054,7 @@
         "sleep"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 86,
@@ -1066,7 +1066,7 @@
         "respect"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 87,
@@ -1078,7 +1078,7 @@
         "respect"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 88,
@@ -1090,7 +1090,7 @@
         "respect"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 89,
@@ -1102,7 +1102,7 @@
         "mindset"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 90,
@@ -1114,7 +1114,7 @@
         "sharing"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 91,
@@ -1126,7 +1126,7 @@
         "safety"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 92,
@@ -1138,7 +1138,7 @@
         "safety"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 93,
@@ -1150,7 +1150,7 @@
         "safety"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 94,
@@ -1162,7 +1162,7 @@
         "hygiene"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 95,
@@ -1174,7 +1174,7 @@
         "tidy"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 96,
@@ -1186,7 +1186,7 @@
         "calm"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 97,
@@ -1198,7 +1198,7 @@
         "screen_time"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 98,
@@ -1210,7 +1210,7 @@
         "movement"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 99,
@@ -1222,7 +1222,7 @@
         "empathy"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 100,
@@ -1234,7 +1234,7 @@
         "learning"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 101,
@@ -1246,7 +1246,7 @@
         "lumi"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 102,
@@ -1258,7 +1258,7 @@
         "hoya"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 103,
@@ -1270,7 +1270,7 @@
         "lumi"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 104,
@@ -1282,7 +1282,7 @@
         "hoya"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 105,
@@ -1294,7 +1294,7 @@
         "lumi"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 106,
@@ -1306,7 +1306,7 @@
         "hoya"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 107,
@@ -1318,7 +1318,7 @@
         "lumi"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 108,
@@ -1330,7 +1330,7 @@
         "hoya"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 109,
@@ -1343,7 +1343,7 @@
         "bird"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 110,
@@ -1356,7 +1356,7 @@
         "bird"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 111,
@@ -1368,7 +1368,7 @@
         "lumi"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 112,
@@ -1380,7 +1380,7 @@
         "hoya"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 113,
@@ -1392,7 +1392,7 @@
         "lumi"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 114,
@@ -1404,7 +1404,7 @@
         "hoya"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 115,
@@ -1416,7 +1416,7 @@
         "lumi"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 116,
@@ -1428,7 +1428,7 @@
         "hoya"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 117,
@@ -1440,7 +1440,7 @@
         "cozy"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 118,
@@ -1452,7 +1452,7 @@
         "cozy"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 119,
@@ -1464,7 +1464,7 @@
         "cozy"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": 120,
@@ -1476,7 +1476,7 @@
         "cozy"
       ],
       "age_level": "低年級",
-      "enabled": true
+      "enabled": false
     }
   ]
 }
