@@ -2,7 +2,7 @@
 (function(root){
 'use strict';
 const clamp=(n,a=0,b=100)=>Math.max(a,Math.min(b,n));
-const APP_VERSION='v0.1.33';
+const APP_VERSION='v0.1.34';
 const defs={lumi:{name:'Lumi',speed:17,pat:1.5,rest:6,sleepAnger2:15,sleepAnger3:30,fastAnger:20,sensitiveAnger:25},hoya:{name:'Hoya',speed:28,pat:1,rest:3,sleepAnger2:20,sleepAnger3:40,fastAnger:30,sensitiveAnger:35}};
 const stats=['hunger','mood','energy','sleepiness','bond','anger'];
 const formalStats=['hunger','mood','energy','bond'];
