@@ -48,8 +48,15 @@ class LittleWonders{
   g.fillStyle='#abc1b6';g.fillRect(181,53,8,6);g.fillStyle='#dce3cd';g.fillRect(182,53,2,5);g.fillStyle='#8eaa9f';g.fillRect(182,59,6,1);
   if(w.time<this.sparkUntil||w.time%18<2){g.globalAlpha=.65;g.fillStyle='#e6c78e';g.fillRect(194,43,1,5);g.fillRect(192,45,5,1);}g.restore();
  }
- drawPaw(g,c,p){const age=this.grooming(c);if(age<0)return;const sweep=.5+.5*Math.sin(age*Math.PI*2),x=-8+sweep*7,y=-27-sweep*8;
-  g.fillStyle=p.shade;g.fillRect(-10,-17,5,8);g.strokeStyle=p.fur;g.lineWidth=5;g.beginPath();g.moveTo(-8,-17);g.lineTo(x,y);g.stroke();g.fillStyle=p.light;g.beginPath();g.ellipse(x,y,4,3,0,0,Math.PI*2);g.fill();
+ drawPaw(g,c,p){const age=this.grooming(c);if(age<0)return;
+  const side=(c.id==='lumi'?-1:1)*(age<1.8?1:-1),phase=(age%1.8)/1.8;
+  let x,y;
+  if(phase<.3){const lift=Math.min(1,phase/.22);x=side*(8-5*lift);y=-17-6*lift;g.fillStyle='#d9808b';g.fillRect(side*2-1,-22,3,4);}
+  else if(phase<.88){const stroke=(phase-.3)/.58,ease=.5-Math.cos(stroke*Math.PI)*.5;
+   x=side*(14-11*ease+3*Math.sin(stroke*Math.PI));y=-28-14*ease-3*Math.sin(stroke*Math.PI);
+  }else{const down=(phase-.88)/.12;x=side*(3+6*down);y=-42+25*down;}
+  g.strokeStyle=p.shade;g.lineWidth=5;g.beginPath();g.moveTo(side*7,-14);g.quadraticCurveTo(side*14,-21,x,y);g.stroke();
+  g.fillStyle=p.light;g.beginPath();g.ellipse(x,y,4,3,side*.35,0,Math.PI*2);g.fill();
  }
 }
 root.LittleWonders=LittleWonders;
